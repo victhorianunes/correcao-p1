@@ -1,0 +1,27 @@
+<div>
+<h2>Cotações</h2>
+</div>
+<div>
+<table class="table table-dark">
+  <thead>
+    <tr>
+      <td>USD</td>
+      <td>EUR</td>
+      <td>BRL</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of this.wallet.btcRates; index as i">
+      <td>
+        $ {{item.bpi.USD.rate_float.toFixed(3)}}
+      </td>
+      <td>
+      € {{item.bpi.EUR.rate_float.toFixed(3)}}   
+      </td>
+      <td>
+      R$ {{wallet.BRLBtcRates[i]?.bpi.BRL.rate_float.toFixed(3)}}
+    </td>
+    </tr>
+  </tbody>
+</table>
+</div>

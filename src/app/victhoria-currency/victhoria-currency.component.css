@@ -1,0 +1,23 @@
+
+div {
+  display: flex;
+  margin: 20px;
+  
+
+}
+
+table {
+  border-collapse: collapse;
+  
+}
+
+th,
+td {
+ text-align: center;
+  padding: 10px;
+}
+
+
+.sub {
+  font-size: 15px;
+}

@@ -1,0 +1,12 @@
+<div>
+  <h2>Carteira</h2>
+  <p>Operações de compra e venda</p>
+  R$ <input #brl type="number" step="0.01" min="0">
+  <input class="button" type="submit" value="+" (click) ="wallet.colocar(+brl.value)">
+  <input class="button" type="submit" value="-" (click) ="wallet.tirar(+brl.value)"> <!--LEMBRETE: o "+" converte string p/ number-->
+  <hr>
+ <h3>Saldo: <u>{{wallet.bitCoins}}</u></h3>
+ <p><b>{{wallet.getBtcInBRL()}} BRL | {{wallet.getBtcInUSD()}} USD | {{wallet.getBtcInEUR()}} EUR </b></p>
+
+  <hr>
+</div>
